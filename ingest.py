@@ -1,8 +1,9 @@
 import os
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.vectorstores import Chroma
-from langchain.embeddings import SentenceTransformerEmbeddings
-from langchain.document_loaders import DirectoryLoader
+from langchain_community.vectorstores import Chroma, Qdrant
+from langchain_community.embeddings import SentenceTransformerEmbeddings
+from langchain_community.document_loaders import DirectoryLoader, PyPDFLoader
+
 from langchain.document_loaders import PyPDFLoader
 from langchain.vectorstores import Qdrant
 
